@@ -46,7 +46,7 @@ namespace winStudent
                 }
                 else
                 {
-                    MessageBox.Show("用户名或密码错误！");
+                    MessageBox.Show("登录失败！");
                 }
             }
             else

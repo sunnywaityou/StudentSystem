@@ -19,3 +19,6 @@ F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\winStudent\obj\
 F:\18年大三上寒假\web开发\StudentSystem\winStudent\bin\Debug\winStudent.exe.config
 F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.exe
 F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.pdb
+D:\桌面\项目\StudentSystem\winStudent\bin\Debug\winStudent.exe.config
+D:\桌面\项目\StudentSystem\winStudent\obj\Debug\winStudent.exe
+D:\桌面\项目\StudentSystem\winStudent\obj\Debug\winStudent.pdb
