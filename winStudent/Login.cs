@@ -16,7 +16,7 @@ namespace winStudent
     public partial class Login : Form
     {
         public Bll.studentServices bll = new Bll.studentServices();
-        public Model.SysAdmin model = new SysAdmin();
+        public Model.SysAdmin mSysAdmin = new SysAdmin();
         public Login()
         {
             InitializeComponent();
@@ -37,10 +37,10 @@ namespace winStudent
                     LoginId = user,
                     LoginPwd = pwd
                 };
-                model = bll.Exits(objAdmin);
-                if (model != null)
+                mSysAdmin = bll.Exits(objAdmin);
+                if (mSysAdmin != null)
                 {
-                    Index ind = new Index(model.LoginId,model.AdminName);
+                    Index ind = new Index(mSysAdmin.LoginId, mSysAdmin.AdminName);
                     this.Hide();
                     ind.Show();
                 }
