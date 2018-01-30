@@ -13,7 +13,6 @@ namespace winStudent
 {
     public partial class Index : Form
     {
-        Bll.v_students bll = new Bll.v_students();
         Model.v_students model = new v_students();
         public string Xuehao;
         public string AdminName;
