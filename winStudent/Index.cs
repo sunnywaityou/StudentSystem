@@ -35,7 +35,6 @@ namespace winStudent
             sq.MdiParent = this;
             sq.Dock = DockStyle.Fill;
             sq.Show();
-
         }
 
         private void 信息修改ToolStripMenuItem_Click(object sender, EventArgs e)
