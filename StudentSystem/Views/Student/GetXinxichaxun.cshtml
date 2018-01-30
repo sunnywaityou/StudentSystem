@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "信息查询";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+@ViewBag.Title
+
+<body>
+    <div id="LeftNavigation" style="margin-left:10rem;">
+        <ul class="level1">
+            <li>@Html.ActionLink("专业推荐课表查询", "zykbtjcx", "Student", new { @class = "level1" })</li>
+            <li>@Html.ActionLink("学生个人课表", "xsgrkb", "Student", new { @class = "level1" })</li>
+            <li>@Html.ActionLink("学生考试查询", "xskscx", "Student", new { @class = "level1" })</li>
+            <li>@Html.ActionLink("成绩查询", "cjcx", "Student", new { @class = "level1" })</li>
+            <li>@Html.ActionLink("等级考试查询", "djkscx", "Student", new { @class = "level1" })</li>
+            <li>@Html.ActionLink("培养计划", "pyjh", "Student", new { @class = "level1" })</li>
+            <li>@Html.ActionLink("学生选课情况查询", "xsxkqkcx", "Student", new { @class = "level1" })</li>
+            <li>@Html.ActionLink("学生补考考场查询", "xsbkkccx", "Student", new { @class = "level1" })</li>
+        </ul>
+    </div>
+</body>
+

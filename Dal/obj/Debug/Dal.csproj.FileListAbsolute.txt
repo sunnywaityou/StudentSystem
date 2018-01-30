@@ -1,0 +1,8 @@
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\bin\Debug\Dal.dll
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\bin\Debug\Dal.pdb
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\bin\Debug\Model.dll
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\bin\Debug\Model.pdb
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\obj\Debug\Dal.dll
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\obj\Debug\Dal.pdb
+F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Dal\bin\Debug\Maticsoft.DBUtility.dll

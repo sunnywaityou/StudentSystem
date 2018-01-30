@@ -1,0 +1,115 @@
+﻿@using Model;
+@model IEnumerable<Model.student>
+
+@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p style="color:white; font-size:30px; margin-top:2rem;">教务管理系统</p>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="bodyDiv">
+        <div id="headDiv">
+            <div class="head">
+            </div>
+            <!--导航-->
+            <!--主菜单-->
+            <ul class="nav">
+                <li class="top">
+                    @Html.ActionLink("返回首页", "GetStudent", new { @class = "top" })
+                </li>
+                <li class="top">
+                    @Html.ActionLink("个人信息", "GetGerenxinxi", new { @class = "top" })
+                </li>
+
+                <li class="top">
+                    @Html.ActionLink("质量评价", "GetZhiliangpingjia", new { @class = "top" })
+                </li>
+
+                <li class="top">
+                    @Html.ActionLink("活动报名", "GetHuodongbaoming", new { @class = "top" })
+                </li>
+
+                <!--信息查询-->
+                <li class="top">
+                    @Html.ActionLink("信息查询", "GetXinxichaxun", new { @class = "top" })
+                </li>
+
+                <li class="top">
+                    @Html.ActionLink("信息维护", "GetXinxiweihu", new { @class = "top" })
+                </li>
+
+                <li class="top">
+                    @Html.ActionLink("公用信息", "GetGongyongxinxi", new { @class = "top" })
+                </li>
+            </ul>
+
+            <div class="tab">
+                <ul style="display:none">
+                    <li></li>
+                </ul>
+                <p class="location">
+                    <em>
+                        当前位置 --
+                        <span id="dqwz">个人信息</span>
+                        <span id="lj" style="display:none"></span>
+                    </em>
+                    <span id="xsrs">
+                        <font color="red"></font>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <!--顶部-->
+
+        <div id="mainDiv">
+            @if (Session["count"] == null)
+            {                
+                <form class="table" method="get" action="\Student\GetGerenxinxi">
+                    <ul>                        
+                        <li>学号： @ViewData["xuehao"]</li>
+                        <li>姓名： @ViewData["name"]</li>
+                        <li>年龄： @ViewData["age"]</li>
+                        <li>爱好： @ViewData["hobby"]</li>
+                        <li>专业： @ViewData["zhuanye"]</li>
+                        <li>学历： @ViewData["xueli"]</li>
+                    </ul>
+                </form>
+            }
+            else
+            {
+                <form class="table" method="post" action="\Student\GetGerenxinxi">
+                    @ViewBag.Tishi
+                </form>
+            }
+        </div>
+        <div id="footerDiv">
+            <div class="footer">
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - haha Application</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
