@@ -22,7 +22,7 @@ namespace winStudent
             InitializeComponent();
         }
         /// <summary>
-        /// 登录
+        /// 登录啊啊啊
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
