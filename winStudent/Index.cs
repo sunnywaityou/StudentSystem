@@ -25,7 +25,7 @@ namespace winStudent
             AdminName = adminName.ToString();
             InitializeComponent();
             toolStripStatusLabel2.Text = AdminName + "同学";
-            Xuehao = loginId;
+            Xuehao = loginId;//jiashegai l dx
         }
 
         private void 信息查询ToolStripMenuItem1_Click(object sender, EventArgs e)
