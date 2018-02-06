@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Index_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Index_Admin.Designer.cs">
+      <DependentUpon>Index_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
@@ -71,8 +71,8 @@
     <Compile Include="stu_query.Designer.cs">
       <DependentUpon>stu_query.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Index_Admin.resx">
+      <DependentUpon>Index_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>

@@ -32,7 +32,7 @@ namespace Dal
         public Model.SysAdmin isExits(SysAdmin model)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("select AdminName from t_Admin");
+            strSql.Append("select AdminName, LoginId, LoginPwd, roleID from t_Admin");
             strSql.Append(" where LoginId=@user");
             strSql.Append(" and LoginPwd=@pwd");
             SqlParameter[] parameter =
@@ -50,6 +50,7 @@ namespace Dal
             {
                 model.LoginId = parameter[0].Value.ToString();
                 model.LoginPwd = parameter[1].Value.ToString();
+                model.roleID = Convert.ToInt32(ds.Tables[0].Rows[0][3]);
                 model.AdminName = ds.Tables[0].Rows[0][0].ToString();
             }
             else

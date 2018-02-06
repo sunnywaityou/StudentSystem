@@ -8,3 +8,13 @@ F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Bll\obj\Debug\B
 F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Bll\obj\Debug\Bll.dll
 F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Bll\obj\Debug\Bll.pdb
 F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Bll\bin\Debug\Maticsoft.DBUtility.dll
+F:\18年大三上寒假\web开发\StudentSystem\Bll\bin\Debug\Bll.dll
+F:\18年大三上寒假\web开发\StudentSystem\Bll\bin\Debug\Bll.pdb
+F:\18年大三上寒假\web开发\StudentSystem\Bll\bin\Debug\Dal.dll
+F:\18年大三上寒假\web开发\StudentSystem\Bll\bin\Debug\Model.dll
+F:\18年大三上寒假\web开发\StudentSystem\Bll\bin\Debug\Maticsoft.DBUtility.dll
+F:\18年大三上寒假\web开发\StudentSystem\Bll\bin\Debug\Dal.pdb
+F:\18年大三上寒假\web开发\StudentSystem\Bll\bin\Debug\Model.pdb
+F:\18年大三上寒假\web开发\StudentSystem\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+F:\18年大三上寒假\web开发\StudentSystem\Bll\obj\Debug\Bll.dll
+F:\18年大三上寒假\web开发\StudentSystem\Bll\obj\Debug\Bll.pdb

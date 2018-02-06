@@ -81,21 +81,21 @@
             // 信息查询ToolStripMenuItem1
             // 
             this.信息查询ToolStripMenuItem1.Name = "信息查询ToolStripMenuItem1";
-            this.信息查询ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.信息查询ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.信息查询ToolStripMenuItem1.Text = "信息查询";
             this.信息查询ToolStripMenuItem1.Click += new System.EventHandler(this.信息查询ToolStripMenuItem1_Click);
             // 
             // 信息修改ToolStripMenuItem
             // 
             this.信息修改ToolStripMenuItem.Name = "信息修改ToolStripMenuItem";
-            this.信息修改ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.信息修改ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.信息修改ToolStripMenuItem.Text = "信息修改";
             this.信息修改ToolStripMenuItem.Click += new System.EventHandler(this.信息修改ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -218,7 +218,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Index";
-            this.Text = "教务管理系统";
+            this.Text = "教务管理系统-学生";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

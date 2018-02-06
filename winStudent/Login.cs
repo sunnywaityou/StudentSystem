@@ -40,9 +40,23 @@ namespace winStudent
                 mSysAdmin = bll.Exits(objAdmin);
                 if (mSysAdmin != null)
                 {
-                    Index ind = new Index(mSysAdmin.LoginId, mSysAdmin.AdminName);
-                    this.Hide();
-                    ind.Show();
+                    int roleId = mSysAdmin.roleID;
+                    switch (roleId)
+                    {
+                        case 1://管理员
+                            Index_Admin ia = new Index_Admin(mSysAdmin.LoginId, mSysAdmin.AdminName);
+                            this.Hide();
+                            ia.Show();
+                            break;
+                        case 2://教师
+
+                            break;
+                        case 3://学生
+                            Index ind = new Index(mSysAdmin.LoginId, mSysAdmin.AdminName);
+                            this.Hide();
+                            ind.Show();
+                            break;
+                    }
                 }
                 else
                 {

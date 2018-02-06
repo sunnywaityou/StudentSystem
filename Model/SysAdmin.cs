@@ -10,5 +10,6 @@ namespace Model
         public string LoginId { get; set; }
         public string LoginPwd { get; set; }
         public string AdminName { get; set; }
+        public int roleID { get; set; }
     }
 }
