@@ -25,7 +25,7 @@ namespace StudentSystem.Controllers
             //【1】获取数据
             SysAdmin objAdmin = new SysAdmin()
             {
-                LoginId = Convert.ToInt32(Request.Params["loginId"]),
+                LoginId = Request.Params["loginId"],
                 LoginPwd = Request.Params["loginPwd"]
             };
             //【2】业务处理

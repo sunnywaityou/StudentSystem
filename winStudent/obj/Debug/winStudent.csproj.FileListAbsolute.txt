@@ -38,3 +38,6 @@ F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.
 F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.Properties.Resources.resources
 F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.stu_query.resources
 F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.csproj.GenerateResource.Cache
+F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.Admin.student_add.resources
+F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.Admin.student_edit.resources
+F:\18年大三上寒假\web开发\StudentSystem\winStudent\obj\Debug\winStudent.Admin.student_query.resources

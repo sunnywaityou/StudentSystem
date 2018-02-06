@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using winStudent.Admin;
 
 namespace winStudent
 {
@@ -26,6 +27,26 @@ namespace winStudent
             InitializeComponent();
             toolStripStatusLabel2.Text = AdminName;
             Xuehao = loginId;
+        }
+
+        private void 学生查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            student_query sq = new student_query();
+            sq.MdiParent = this;
+            sq.Dock = DockStyle.Fill;
+            sq.Show();
+        }
+
+        private void 学生添加ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            student_add sa = new student_add();
+            sa.Show();
+        }
+
+        private void 信息修改ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            student_edit se = new student_edit();
+            se.Show();
         }
     }
 }

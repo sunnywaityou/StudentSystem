@@ -45,6 +45,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\student_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\student_add.Designer.cs">
+      <DependentUpon>student_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\student_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\student_edit.Designer.cs">
+      <DependentUpon>student_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\student_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\student_query.Designer.cs">
+      <DependentUpon>student_query.cs</DependentUpon>
+    </Compile>
     <Compile Include="Index_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +89,15 @@
     <Compile Include="stu_query.Designer.cs">
       <DependentUpon>stu_query.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\student_add.resx">
+      <DependentUpon>student_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\student_edit.resx">
+      <DependentUpon>student_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\student_query.resx">
+      <DependentUpon>student_query.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index_Admin.resx">
       <DependentUpon>Index_Admin.cs</DependentUpon>
     </EmbeddedResource>

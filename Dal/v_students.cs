@@ -12,7 +12,7 @@ namespace Dal
     public class v_students
     {
         /// <summary>
-        /// 获取学生个人信息
+        /// 根据学号获取学生个人信息
         /// </summary>
         /// <param name="xuehao"></param>
         /// <returns></returns>
@@ -72,8 +72,31 @@ namespace Dal
                 {
                     model.Xueli = row["Xueli"].ToString();
                 }
+                if (row["roleName"] != null)
+                {
+                    model.Xueli = row["roleName"].ToString();
+                }
             }
             return model;
+        }
+        /// <summary>
+        /// 获取学生表信息
+        /// </summary>
+        /// <returns></returns>
+        public DataSet getModels()
+        {
+            StringBuilder sqlstr = new StringBuilder();
+            sqlstr.Append("select xuehao, name, age, hobby, zhuanye, xueli, roleName");
+            sqlstr.Append(" from v_students");
+            DataSet ds = DbHelperSQL.Query(sqlstr.ToString());
+            if(ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+            }
+            else
+            {
+               return ds = null;
+            }
         }
     }
 }
