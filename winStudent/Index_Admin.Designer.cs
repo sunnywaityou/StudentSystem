@@ -30,15 +30,15 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.学员管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.学生查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.学生添加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.信息修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.成绩管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.课程管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.教师管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.学生查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +49,8 @@
             this.学员管理ToolStripMenuItem,
             this.成绩管理ToolStripMenuItem,
             this.课程管理ToolStripMenuItem,
-            this.教师管理ToolStripMenuItem});
+            this.教师管理ToolStripMenuItem,
+            this.退出系统ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(739, 25);
@@ -60,11 +61,17 @@
             // 
             this.学员管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.学生查询ToolStripMenuItem,
-            this.学生添加ToolStripMenuItem,
-            this.信息修改ToolStripMenuItem});
+            this.学生添加ToolStripMenuItem});
             this.学员管理ToolStripMenuItem.Name = "学员管理ToolStripMenuItem";
             this.学员管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.学员管理ToolStripMenuItem.Text = "学生管理";
+            // 
+            // 学生查询ToolStripMenuItem
+            // 
+            this.学生查询ToolStripMenuItem.Name = "学生查询ToolStripMenuItem";
+            this.学生查询ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.学生查询ToolStripMenuItem.Text = "学生查询";
+            this.学生查询ToolStripMenuItem.Click += new System.EventHandler(this.学生查询ToolStripMenuItem_Click);
             // 
             // 学生添加ToolStripMenuItem
             // 
@@ -72,13 +79,6 @@
             this.学生添加ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.学生添加ToolStripMenuItem.Text = "学生添加";
             this.学生添加ToolStripMenuItem.Click += new System.EventHandler(this.学生添加ToolStripMenuItem_Click);
-            // 
-            // 信息修改ToolStripMenuItem
-            // 
-            this.信息修改ToolStripMenuItem.Name = "信息修改ToolStripMenuItem";
-            this.信息修改ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.信息修改ToolStripMenuItem.Text = "信息修改";
-            this.信息修改ToolStripMenuItem.Click += new System.EventHandler(this.信息修改ToolStripMenuItem_Click);
             // 
             // 成绩管理ToolStripMenuItem
             // 
@@ -120,12 +120,12 @@
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 17);
             // 
-            // 学生查询ToolStripMenuItem
+            // 退出系统ToolStripMenuItem
             // 
-            this.学生查询ToolStripMenuItem.Name = "学生查询ToolStripMenuItem";
-            this.学生查询ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.学生查询ToolStripMenuItem.Text = "学生查询";
-            this.学生查询ToolStripMenuItem.Click += new System.EventHandler(this.学生查询ToolStripMenuItem_Click);
+            this.退出系统ToolStripMenuItem.Name = "退出系统ToolStripMenuItem";
+            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.退出系统ToolStripMenuItem.Text = "退出系统";
+            this.退出系统ToolStripMenuItem.Click += new System.EventHandler(this.退出系统ToolStripMenuItem_Click);
             // 
             // Index_Admin
             // 
@@ -158,7 +158,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripMenuItem 学生添加ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 信息修改ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 学生查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 退出系统ToolStripMenuItem;
     }
 }

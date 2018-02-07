@@ -101,5 +101,65 @@ namespace Dal
                 return false;
             }
         }
+        //删除一条记录
+        public bool Delete(int id)
+        {
+            StringBuilder sqlstr = new StringBuilder();
+            sqlstr.Append("delete from t_student ");
+            sqlstr.Append(" where xuehao=@id");
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@id",SqlDbType.VarChar,50)
+            };
+            parameters[0].Value = id;
+            int rows = DbHelperSQL.ExecuteSql(sqlstr.ToString(), parameters);
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        /// <summary>
+        /// 添加一条记录
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public int Add(Model.student model)
+        {
+            StringBuilder sqlstr = new StringBuilder();
+            sqlstr.Append("insert into t_student (");
+            sqlstr.Append(" xuehao,name,age,hobby,zhuanye,xueli) ");
+            sqlstr.Append(" values (");
+            sqlstr.Append(" @xuehao,@name,@age,@hobby,@zhuanye,@xueli )");
+            sqlstr.Append(";select @@IDENTITY");
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@xuehao", SqlDbType.VarChar, 50),
+                new SqlParameter("@name", SqlDbType.VarChar, 50),
+                new SqlParameter("@age", SqlDbType.VarChar, 50),
+                new SqlParameter("@hobby", SqlDbType.VarChar, 50),
+                new SqlParameter("@zhuanye", SqlDbType.VarChar, 50),
+                new SqlParameter("@xueli", SqlDbType.VarChar, 50)
+            };
+            parameters[0].Value = model.xuehao;
+            parameters[1].Value = model.name;
+            parameters[2].Value = model.age;
+            parameters[3].Value = model.hobby;
+            parameters[4].Value = model.zhuanye;
+            parameters[5].Value = model.xueli;
+
+            int obj = DbHelperSQL.ExecuteSql(sqlstr.ToString(), parameters);
+            if(obj < 1)
+            {
+                return 0;
+            }
+            else
+            {
+                return obj;
+            }
+        }
     }
 }

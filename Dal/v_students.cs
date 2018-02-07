@@ -72,10 +72,10 @@ namespace Dal
                 {
                     model.Xueli = row["Xueli"].ToString();
                 }
-                if (row["roleName"] != null)
-                {
-                    model.Xueli = row["roleName"].ToString();
-                }
+                //if (row["roleName"] != null)
+                //{
+                //    model.Xueli = row["roleName"].ToString();
+                //}
             }
             return model;
         }

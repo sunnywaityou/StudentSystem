@@ -39,14 +39,15 @@ namespace winStudent
 
         private void 学生添加ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            student_add sa = new student_add();
+            stu_query sa = new stu_query();
             sa.Show();
         }
 
-        private void 信息修改ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            student_edit se = new student_edit();
-            se.Show();
+            Login lo = new Login();
+            lo.Show();
+            this.Close();
         }
     }
 }

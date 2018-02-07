@@ -21,6 +21,8 @@ namespace winStudent
         public stu_query()
         {
             InitializeComponent();
+            this.Text = "学生添加";
+            this.btn_close.Text = "添加";
         }
         public stu_query(string xuehao)
         {
@@ -31,8 +33,8 @@ namespace winStudent
         public stu_query(string xuehao, int id)
         {
             ID = id;
-            Xuehao = xuehao;
             InitializeComponent();
+            Xuehao = xuehao;
             getStudents();// 获取学生信息
             this.Text = "信息修改";
             this.btn_close.Text = "确认修改";
@@ -66,19 +68,19 @@ namespace winStudent
         /// <param name="e"></param>
         private void btn_close_Click(object sender, EventArgs e)
         {
-            if(ID>0)
-            {
-                model2.name = tbx_name.Text.Trim();
-                model2.xuehao = tbx_xuehao.Text.Trim();
-                model2.zhuanye = tbx_zhuanye.Text.Trim();
-                model2.xueli = tbx_xueli.Text.Trim();
-                model2.age = tbx_age.Text.Trim();
-                model2.hobby = tbx_hobby.Text.Trim();
+            model2.name = tbx_name.Text.Trim();
+            model2.xuehao = tbx_xuehao.Text.Trim();
+            model2.zhuanye = tbx_zhuanye.Text.Trim();
+            model2.xueli = tbx_xueli.Text.Trim();
+            model2.age = tbx_age.Text.Trim();
+            model2.hobby = tbx_hobby.Text.Trim();
 
-               
+            if (ID>0)
+            {               
                 if (bll2.Update(model2) == true)
                 {
                     MessageBox.Show("修改成功！", "提示");
+                    this.Close();
                 }
                 else
                 {
@@ -87,7 +89,16 @@ namespace winStudent
             }
             else
             {
-                this.Close();
+                if(bll2.Add(model2) > 0)
+                {
+                    MessageBox.Show("添加成功！", "提示");
+
+                }
+                else
+                {
+                    MessageBox.Show("添加失败！", "提示");
+                }
+                //this.Close();
             }
         }
     }

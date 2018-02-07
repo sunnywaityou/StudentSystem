@@ -99,7 +99,6 @@
             // 
             // tbx_xuehao
             // 
-            this.tbx_xuehao.Enabled = false;
             this.tbx_xuehao.Location = new System.Drawing.Point(110, 56);
             this.tbx_xuehao.Name = "tbx_xuehao";
             this.tbx_xuehao.Size = new System.Drawing.Size(100, 21);
@@ -107,7 +106,6 @@
             // 
             // tbx_name
             // 
-            this.tbx_name.Enabled = false;
             this.tbx_name.Location = new System.Drawing.Point(300, 56);
             this.tbx_name.Name = "tbx_name";
             this.tbx_name.Size = new System.Drawing.Size(100, 21);
@@ -115,7 +113,6 @@
             // 
             // tbx_age
             // 
-            this.tbx_age.Enabled = false;
             this.tbx_age.Location = new System.Drawing.Point(110, 116);
             this.tbx_age.Name = "tbx_age";
             this.tbx_age.Size = new System.Drawing.Size(100, 21);
@@ -123,7 +120,6 @@
             // 
             // tbx_xueli
             // 
-            this.tbx_xueli.Enabled = false;
             this.tbx_xueli.Location = new System.Drawing.Point(300, 116);
             this.tbx_xueli.Name = "tbx_xueli";
             this.tbx_xueli.Size = new System.Drawing.Size(100, 21);
@@ -131,7 +127,6 @@
             // 
             // tbx_zhuanye
             // 
-            this.tbx_zhuanye.Enabled = false;
             this.tbx_zhuanye.Location = new System.Drawing.Point(110, 185);
             this.tbx_zhuanye.Name = "tbx_zhuanye";
             this.tbx_zhuanye.Size = new System.Drawing.Size(100, 21);
@@ -139,7 +134,6 @@
             // 
             // tbx_hobby
             // 
-            this.tbx_hobby.Enabled = false;
             this.tbx_hobby.Location = new System.Drawing.Point(300, 185);
             this.tbx_hobby.Multiline = true;
             this.tbx_hobby.Name = "tbx_hobby";

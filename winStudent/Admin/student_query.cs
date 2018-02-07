@@ -17,8 +17,9 @@ namespace winStudent.Admin
         Bll.v_students bll = new Bll.v_students();
         Dal.v_students dal = new Dal.v_students();
         Model.v_students model = new Model.v_students();
+        Bll.studentServices bll2 = new Bll.studentServices();
+       
         private DataSet ds = null;
-        DataSet ds2 = new DataSet();
         public student_query()
         {
             InitializeComponent();
@@ -43,30 +44,66 @@ namespace winStudent.Admin
         //查询
         private void btn_query_Click(object sender, EventArgs e)
         {
+            dgv_studentList.DataSource = null;
+            getStudents();
             string num = tbx_Num.Text.Trim();
             string name = tbx_Name.Text.Trim();
             if (tbx_Num.Text != "" || tbx_Name.Text != "")
             {
                 DataTable dt = ds.Tables[0];
-                string expression = "xuehao = " + num;
-                string sortOrder = "xuehao DESC";
-                DataRow[] dr = dt.Select(expression, sortOrder);
-                DataTable dt2 = dt.Clone();
-                dt2.Rows.Add(dr);
-                BindingSource bs = new BindingSource();
-                bs.DataSource = dt2;
-                dgv_studentList.DataSource = dt2;
+                var item = ds.Tables[0].AsEnumerable();
+                var query = from a in item where (a.Field<string>("xuehao") == num || a.Field<string>("name") == name) select a; //linq查询
+                if(query.ToList().Count == 0)
+                {
+                    MessageBox.Show("无该记录");
+                }
+                else
+                {
+                    dgv_studentList.DataSource = query.AsDataView();
+                }
+            }
+            else
+            {
+                dgv_studentList.DataSource = ds.Tables[0];
             }
         }
         //修改
         private void btn_edit_Click(object sender, EventArgs e)
         {
-
+            if(dgv_studentList.SelectedRows.Count > 0)
+            {
+                int a = dgv_studentList.CurrentRow.Index;
+                string xuehao = dgv_studentList.Rows[a].Cells[0].Value.ToString();
+                stu_query se = new stu_query(xuehao, 2);
+                se.Show();
+            }
+            else
+            {
+                MessageBox.Show("请选择记录");
+            }
         }
         //删除
         private void btn_delete_Click(object sender, EventArgs e)
         {
-
+            if(dgv_studentList.SelectedRows.Count>0)
+            {
+                DialogResult result = MessageBox.Show("确认删除？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.Cancel) return;
+                else
+                {
+                    int a = dgv_studentList.CurrentRow.Index;
+                    int id = Convert.ToInt32(dgv_studentList.Rows[a].Cells[0].Value);
+                    if (bll2.Delete(id) == true)
+                    {
+                        MessageBox.Show("删除成功！", "提示");
+                        getStudents();
+                    }
+                    else
+                    {
+                        MessageBox.Show("删除失败！", "提示");
+                    }
+                }
+            }
         }
     }
 }

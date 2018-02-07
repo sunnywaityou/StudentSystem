@@ -28,5 +28,23 @@ namespace Bll
         {
             return dal2.Update(model);
         }
+        /// <summary>
+        /// 删除一条记录
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool Delete(int id)
+        {
+            return dal2.Delete(id);
+        }
+        /// <summary>
+        /// 添加一条记录
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public int Add(Model.student model)
+        {
+            return dal2.Add(model);
+        }
     }
 }
