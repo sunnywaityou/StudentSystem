@@ -1,0 +1,13 @@
+F:\服务外包2018\源码\GxHelper\bin\Debug\GxHelper.dll
+F:\服务外包2018\源码\GxHelper\bin\Debug\GxHelper.pdb
+F:\服务外包2018\源码\GxHelper\bin\Debug\Newtonsoft.Json.dll
+F:\服务外包2018\源码\GxHelper\bin\Debug\Newtonsoft.Json.xml
+F:\服务外包2018\源码\GxHelper\obj\Debug\GxHelper.csprojResolveAssemblyReference.cache
+F:\服务外包2018\源码\GxHelper\obj\Debug\GxHelper.dll
+F:\服务外包2018\源码\GxHelper\obj\Debug\GxHelper.pdb
+F:\18年大三上寒假\web开发\StudentSystem\GxHelper\bin\Debug\GxHelper.dll
+F:\18年大三上寒假\web开发\StudentSystem\GxHelper\bin\Debug\GxHelper.pdb
+F:\18年大三上寒假\web开发\StudentSystem\GxHelper\bin\Debug\Newtonsoft.Json.dll
+F:\18年大三上寒假\web开发\StudentSystem\GxHelper\bin\Debug\Newtonsoft.Json.xml
+F:\18年大三上寒假\web开发\StudentSystem\GxHelper\obj\Debug\GxHelper.dll
+F:\18年大三上寒假\web开发\StudentSystem\GxHelper\obj\Debug\GxHelper.pdb

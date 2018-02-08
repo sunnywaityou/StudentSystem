@@ -5,6 +5,6 @@ F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Model\obj\Debug
 F:\18年大三上寒假\web开发\mvc\TheFirstTest\StudentSystem\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 F:\18年大三上寒假\web开发\StudentSystem\Model\bin\Debug\Model.dll
 F:\18年大三上寒假\web开发\StudentSystem\Model\bin\Debug\Model.pdb
-F:\18年大三上寒假\web开发\StudentSystem\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 F:\18年大三上寒假\web开发\StudentSystem\Model\obj\Debug\Model.dll
 F:\18年大三上寒假\web开发\StudentSystem\Model\obj\Debug\Model.pdb
+F:\18年大三上寒假\web开发\StudentSystem\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

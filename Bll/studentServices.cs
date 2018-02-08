@@ -14,6 +14,11 @@ namespace Bll
         private Model.SysAdmin model1 = new SysAdmin();
         private Dal.studentServices dal2 = new Dal.studentServices();
         private Model.student model2 = new student();
+        /// <summary>
+        /// 是否存在记录
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public Model.SysAdmin Exits(SysAdmin model)
         {
             model1 = dal.isExits(model);

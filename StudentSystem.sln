@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winStudent", "winStudent\winStudent.csproj", "{DD1F6928-984E-4CEA-9F0C-E8FBCB104AB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GxHelper", "GxHelper\GxHelper.csproj", "{679A875B-DD59-4BE9-9238-11E9D54A4366}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DD1F6928-984E-4CEA-9F0C-E8FBCB104AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD1F6928-984E-4CEA-9F0C-E8FBCB104AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD1F6928-984E-4CEA-9F0C-E8FBCB104AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679A875B-DD59-4BE9-9238-11E9D54A4366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679A875B-DD59-4BE9-9238-11E9D54A4366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679A875B-DD59-4BE9-9238-11E9D54A4366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679A875B-DD59-4BE9-9238-11E9D54A4366}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

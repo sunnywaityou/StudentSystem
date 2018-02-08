@@ -1,18 +1,38 @@
-﻿@using Model;
+﻿@using Model
 @model Model.SysAdmin
+
 @{
     Layout = null;
 }
 <h2>教务管理系统登录</h2>
 <br /><br />
-<body>
-    <form method="post" action="\Account\AdminLogin">
-        用户名:<input name="loginId" type="text" /><br /><br />
-        密码:  &nbsp;&nbsp;<input name="loginPwd" type="password" /><br /><br />
-        <input type="submit" value="登 录" />
-        <input type="submit" value="注 册" />
-        <br /><br />
-        @ViewData["info"]
-    </form>
-</body>
-5
+@using (Html.BeginForm())
+{
+    <div>
+        <fieldset>
+            <legend>Account Information</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.LoginId)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.LoginId)
+                @Html.ValidationMessageFor(m => m.LoginId)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.LoginPwd)
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(m => m.LoginPwd)
+                @Html.ValidationMessageFor(m => m.LoginPwd)
+            </div>
+            <div class="editor-label">
+                @Html.CheckBoxFor(m => m.RemenberMe)
+                @Html.LabelFor(m => m.RemenberMe)
+            </div>
+            <p>
+                <input type="submit" value="Log On" />
+            </p>
+        </fieldset>
+    </div>
+}
